@@ -33,7 +33,6 @@ cloud_l5.place(x=160,y=50)
 bg= PhotoImage(file=r"D:\Downloads\Ws.png")
 bg_l5=Label(df,image=bg)
 bg_l5.place(x=1200,y=50)
-
 v=StringVar()
 
 def wheather_status(event=None):

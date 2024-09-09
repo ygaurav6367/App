@@ -68,9 +68,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries, please contact me at [yadavgaurv2003@gmail.com].
 
 ---
-
-### Instructions for Image
-1. Replace the image URL in the screenshot section with the actual path to your app screenshot. You can upload an image to your GitHub repository or host it elsewhere and provide the link.
-2. Do ensure that email ID is replaced with your actual email.
-
-Is format ko apne project ke hisab se modify karein aur GitHub repository me README file me shamil karein.

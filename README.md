@@ -2,12 +2,12 @@
 # Weather Forecasting App
 
 ## Project Overview
-The Weather Forecasting App allows users to enter the location of any city to fetch real-time weather information. Users can view various parameters such as temperature in Celsius, temperature in Fahrenheit, region, wind speed, wind angle, and wind direction.
+The Weather Forecasting App allows users to enter the location of any city to fetch real-time weather information. Users can view various parameters such as Temperature in Celsius, Temperature in Fahrenheit, Temperature in Region, Wind_speed, Wind_angle, and Wind_direction etc.
 
 ## Features
 - Real-time weather data for any city.
 - Displays temperature in both Celsius and Fahrenheit.
-- Information on wind speed, angle, and direction.
+- Information on wind_speed, angle, and direction.
 - User-friendly interface developed using Tkinter.
 
 ## Technologies Used

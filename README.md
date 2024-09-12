@@ -41,7 +41,8 @@ To run this project locally, make sure you have Python installed on your machine
 
 ## Screenshots
 
-![Show Interface Image](https://drive.google.com/file/d/1x9vo7p7bjvEX91I5KqLPsXRfcqmNizvd/view?usp=sharing)
+![Weather-Forecasting-App](https://github.com/user-attachments/assets/a84943c3-3e02-485c-9a7e-248149329b5c)
+
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:

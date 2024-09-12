@@ -6,33 +6,38 @@ import json
 # l1 = Label(df,text="Wheather Authentication App",bg="blue",fg="white")
 # l1.place(x=500,y=600)
 
-img= PhotoImage(file=r"D:\Downloads\logo png.png")
+img= PhotoImage(file=r"D:\Downloads\wth1.png")
 l2=Label(df,image=img)
-l2.pack()
+l2.place(x=570,y=10)
 
-wind_dir= PhotoImage(file=r"D:\Downloads\stock-vector-wind-direction.png")
+wind_dir= PhotoImage(file=r"D:\Downloads\sj9carua.png")
 wind_l1=Label(df,image=wind_dir)
-wind_l1.place(x=1050,y=660)
+wind_l1.place(x=1060,y=665)
 
-wind_speed= PhotoImage(file=r"D:\Downloads\wind speed.png")
+wind_speed= PhotoImage(file=r"D:\Downloads\sejf60kef.png")
 wind_l2=Label(df,image=wind_speed)
-wind_l2.place(x=350,y=670)
+wind_l2.place(x=350,y=660)
 
 wind= PhotoImage(file=r"D:\Downloads\wind-logo-png-transparent.png")
 wind_l3=Label(df,image=wind)
-wind_l3.place(x=40,y=600)
+wind_l3.place(x=40,y=590)
 
-wind_degree= PhotoImage(file=r"D:\Downloads\wind degree.png")
+wind_degree= PhotoImage(file=r"D:\Downloads\dzmzfs0u.png")
 wind_l4=Label(df,image=wind_degree)
-wind_l4.place(x=700,y=670)
+wind_l4.place(x=700,y=660)
 
-cloud= PhotoImage(file=r"D:\Downloads\OIP.png")
+cloud= PhotoImage(file=r"D:\Downloads\y1sj30qt1.png")
 cloud_l5=Label(df,image=cloud)
-cloud_l5.place(x=160,y=50)
+cloud_l5.place(x=180,y=50)
 
 bg= PhotoImage(file=r"D:\Downloads\Ws.png")
 bg_l5=Label(df,image=bg)
 bg_l5.place(x=1200,y=50)
+
+wind_info= PhotoImage(file=r"D:\Downloads\apa3a5ab1.png")
+wind_l6=Label(df,image=wind_info)
+wind_l6.place(x=1190,y=270)
+
 v=StringVar()
 
 def wheather_status(event=None):

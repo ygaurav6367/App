@@ -41,7 +41,7 @@ To run this project locally, make sure you have Python installed on your machine
 
 ## Screenshots
 
-![Show Interface Image](https://drive.google.com/file/d/1x9vo7p7bjvEX91I5KqLPsXRfcqmNizvd/view?usp=sharing)
+![Show Interface Image]("https://drive.google.com/file/d/1x9vo7p7bjvEX91I5KqLPsXRfcqmNizvd/view?usp=sharing")
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:

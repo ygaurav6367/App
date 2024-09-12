@@ -41,7 +41,7 @@ To run this project locally, make sure you have Python installed on your machine
 
 ## Screenshots
 
-![Show Interface Image](file:\\\C:\Users\gy301\OneDrive\Pictures\Screenshots\Screenshot%20(44).png)
+![Show Interface Image]("file:///C:/Users/gy301/OneDrive/Pictures/Screenshots/Screenshot%20(44).png")
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:

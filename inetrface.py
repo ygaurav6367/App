@@ -3,8 +3,6 @@ df = Tk()
 df.title("Whetather App")
 import requests
 import json
-# l1 = Label(df,text="Wheather Authentication App",bg="blue",fg="white")
-# l1.place(x=500,y=600)
 
 img= PhotoImage(file=r"D:\Downloads\wth1.png")
 l2=Label(df,image=img)

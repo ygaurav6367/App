@@ -4,7 +4,7 @@ df.title("Whetather App")
 import requests
 import json
 
-img= PhotoImage(file=r"D:\Downloads\wth1.png")
+img= PhotoImage(file=r"D:\Downloads\wth2.png")
 l2=Label(df,image=img)
 l2.place(x=570,y=10)
 
@@ -49,6 +49,7 @@ def wheather_status(event=None):
     show_ws.config(text=str(data["current"]["wind_kph"]))
     show_wa.config(text=str(data["current"]["wind_degree"]))
     show_wd.config(text=str(data["current"]["wind_dir"]))
+    show_dt.config(text=str(data["current"]["last_updated"]))
 
 
 
@@ -107,5 +108,11 @@ w_d.place(x=1035,y=580)
 
 show_wd=Label(df,font=("Din",15),text=" ",fg="green")
 show_wd.place(x=1095,y=620)
+
+dt=Label(df,font=("Arial",12),text="Last Updated : ",fg="black")
+dt.place(x=1230,y=755)
+
+show_dt=Label(df,font=("Din",12),text=" ",fg="red")
+show_dt.place(x=1340,y=755)
 
 df.mainloop()

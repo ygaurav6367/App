@@ -1,12 +1,15 @@
 from tkinter import *
+from PIL import Image, ImageTk
+from io import BytesIO
 df = Tk()
 df.title("Whetather App")
 import requests
 import json
 
-img= PhotoImage(file=r"D:\Downloads\wth2.png")
+img= PhotoImage(file=r"D:\Downloads\wth1.png")
 l2=Label(df,image=img)
 l2.place(x=570,y=10)
+
 
 wind_dir= PhotoImage(file=r"D:\Downloads\sj9carua.png")
 wind_l1=Label(df,image=wind_dir)
@@ -32,9 +35,9 @@ bg= PhotoImage(file=r"D:\Downloads\Ws.png")
 bg_l5=Label(df,image=bg)
 bg_l5.place(x=1200,y=50)
 
-wind_info= PhotoImage(file=r"D:\Downloads\apa3a5ab1.png")
-wind_l6=Label(df,image=wind_info)
-wind_l6.place(x=1190,y=270)
+# wind_info= PhotoImage(file=r"D:\Downloads\apa3a5ab1.png")
+# wind_l6=Label(df,image=wind_info)
+# wind_l6.place(x=1190,y=270)
 
 v=StringVar()
 
@@ -51,6 +54,14 @@ def wheather_status(event=None):
     show_wd.config(text=str(data["current"]["wind_dir"]))
     show_dt.config(text=str(data["current"]["last_updated"]))
 
+
+    condition_text = data["current"]["condition"]["text"]
+    icon_url = "https:" + data["current"]["condition"]["icon"]
+    response = requests.get(icon_url)
+    photo = ImageTk.PhotoImage(Image.open(BytesIO(response.content)))   
+    show_climate.config(image=photo)
+    show_climate_text.config(text=condition_text)
+    show_climate.image = photo
 
 
 Entry_box=Entry(font=("Arial",25),bg="white",fg="black",textvariable=v)
@@ -73,11 +84,11 @@ txt3.place(x=630,y=458)
 Btn= Button(df, font=("Arial Black",12),text="Submit",fg="orange",bg="skyblue",command=wheather_status)
 Btn.place(x=720,y=415)
 
-temp_r=Label(df,font=("Arial Black",15),text="Tempreture in Region",fg="black")
-temp_r.place(x=300,y=490)
+temp_r=Label(df,font=("Arial Black",15),text="Region",fg="black")
+temp_r.place(x=360,y=490)
 
 show_r=Label(df,font=("Arial",15),text=" ",fg="red")
-show_r.place(x=380,y=530)
+show_r.place(x=370,y=530)
 
 temp_f=Label(df,font=("Arial Black",15),text="Tempreture in Fahrenheit (°F)",fg="black")
 temp_f.place(x=600,y=490)
@@ -114,5 +125,14 @@ dt.place(x=1230,y=755)
 
 show_dt=Label(df,font=("Din",12),text=" ",fg="red")
 show_dt.place(x=1340,y=755)
+
+
+show_climate=Label(df)
+show_climate.place(x=1250,y=300)
+
+show_climate_text=Label(df,font=("Arial",12))
+show_climate_text.place(x=1200,y=370)
+
+
 
 df.mainloop()

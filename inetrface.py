@@ -6,9 +6,9 @@ df.title("Whetather App")
 import requests
 import json
 
-img= PhotoImage(file=r"D:\Downloads\wth1.png")
+img= PhotoImage(file=r"D:\Downloads\n581fpen1.png")
 l2=Label(df,image=img)
-l2.place(x=570,y=35)
+l2.place(x=620,y=75)
 
 
 wind_dir= PhotoImage(file=r"D:\Downloads\sj9carua.png")
@@ -124,7 +124,7 @@ show_wd.place(x=1095,y=620)
 blank_body=Label(df,bg="deepskyblue",width=600,height=5)
 blank_body.pack()
 
-blank_body_text=Label(df,font=("Arial Black",20),text="WEATHER FORECASTING APP",width=60,justify="center",bg="deepskyblue",fg="darkorange")
+blank_body_text=Label(df,font=("Arial Black",20),text="WEATHER FORECASTING APP",width=60,justify="center",bg="deepskyblue")
 blank_body_text.place(x=230,y=16)
 
 dt=Label(df,font=("Din",12,"bold"),text="Last Updated : ",fg="black",bg="deepskyblue")
@@ -134,7 +134,7 @@ show_dt=Label(df,font=("Din",12,"bold"),text=" ",fg="red",bg="deepskyblue")
 show_dt.place(x=1380,y=30)
 
 
-show_climate_text=Label(df,font=("Arial",12,"bold"),bg="deepskyblue",fg="white")
+show_climate_text=Label(df,font=("Arial",12,"bold"),bg="deepskyblue")
 show_climate_text.place(x=120,y=38)
 
 climate_info=Label(df,font=("calibari",8,),text="👇Climate Changes🌥️",bg="deepskyblue",fg="black")

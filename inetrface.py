@@ -8,7 +8,7 @@ import json
 
 img= PhotoImage(file=r"D:\Downloads\wth1.png")
 l2=Label(df,image=img)
-l2.place(x=570,y=10)
+l2.place(x=570,y=35)
 
 
 wind_dir= PhotoImage(file=r"D:\Downloads\sj9carua.png")
@@ -29,15 +29,15 @@ wind_l4.place(x=700,y=660)
 
 cloud= PhotoImage(file=r"D:\Downloads\y1sj30qt1.png")
 cloud_l5=Label(df,image=cloud)
-cloud_l5.place(x=180,y=50)
+cloud_l5.place(x=180,y=80)
 
 bg= PhotoImage(file=r"D:\Downloads\Ws.png")
 bg_l5=Label(df,image=bg)
-bg_l5.place(x=1200,y=50)
+bg_l5.place(x=1200,y=80)
 
-# wind_info= PhotoImage(file=r"D:\Downloads\apa3a5ab1.png")
-# wind_l6=Label(df,image=wind_info)
-# wind_l6.place(x=1190,y=270)
+wind_info= PhotoImage(file=r"D:\Downloads\apa3a5ab1.png")
+wind_l6=Label(df,image=wind_info)
+wind_l6.place(x=1190,y=300)
 
 v=StringVar()
 
@@ -73,10 +73,10 @@ txt=Label(df,font=("Arial Black",12),text="Please, Enter Here Your City Name : "
 txt.place(x=220,y=360)
 
 txt1=Label(df,font=("Broadway",20),text="Current Wheather information",fg="black")
-txt1.place(x=60,y=205)
+txt1.place(x=60,y=235)
 
 txt2=Label(df,font=("Broadway",20),text="Real-time Weather API",fg="black")
-txt2.place(x=1115,y=205)
+txt2.place(x=1115,y=235)
 
 txt3=Label(df,font=("Calibari",11),text="* Note : Click on Submit / Press Enter ",fg="Red")
 txt3.place(x=630,y=458)
@@ -120,19 +120,27 @@ w_d.place(x=1035,y=580)
 show_wd=Label(df,font=("Din",15),text=" ",fg="green")
 show_wd.place(x=1095,y=620)
 
-dt=Label(df,font=("Arial",12),text="Last Updated : ",fg="black")
-dt.place(x=1230,y=755)
 
-show_dt=Label(df,font=("Din",12),text=" ",fg="red")
-show_dt.place(x=1340,y=755)
+blank_body=Label(df,bg="deepskyblue",width=600,height=5)
+blank_body.pack()
+
+blank_body_text=Label(df,font=("Arial Black",20),text="WEATHER FORECASTING APP",width=60,justify="center",bg="deepskyblue",fg="darkorange")
+blank_body_text.place(x=230,y=16)
+
+dt=Label(df,font=("Din",12,"bold"),text="Last Updated : ",fg="black",bg="deepskyblue")
+dt.place(x=1260,y=30)
+
+show_dt=Label(df,font=("Din",12,"bold"),text=" ",fg="red",bg="deepskyblue")
+show_dt.place(x=1380,y=30)
 
 
-show_climate=Label(df)
-show_climate.place(x=1250,y=300)
+show_climate_text=Label(df,font=("Arial",12,"bold"),bg="deepskyblue",fg="white")
+show_climate_text.place(x=120,y=38)
 
-show_climate_text=Label(df,font=("Arial",12))
-show_climate_text.place(x=1200,y=370)
+climate_info=Label(df,font=("calibari",8,),text="👇Climate Changes🌥️",bg="deepskyblue",fg="black")
+climate_info.place(x=30)
 
-
+show_climate=Label(df,bg="deepskyblue")
+show_climate.place(x=40,y=13)
 
 df.mainloop()

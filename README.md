@@ -5,7 +5,8 @@
 The Weather Forecasting App allows users to enter the location of any city to fetch real-time weather information. Users can view various parameters such as Temperature in Celsius, Temperature in Fahrenheit, Temperature in Region, Wind_speed, Wind_angle, and Wind_direction etc.
 
 ## Screenshot
-Project Look Like This:![Screenshot (60)](https://github.com/user-attachments/assets/8a94d112-8bb3-43e7-a285-7f0d44ab990e)
+Project Look Like This:![Screenshot (61)](https://github.com/user-attachments/assets/d1bb1789-172c-4f9c-b850-0e77078816bb)
+
 
 
 

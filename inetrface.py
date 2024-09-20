@@ -131,7 +131,7 @@ show_wd=Label(df,font=("Din",15),text=" ",fg="darkgreen")
 show_wd.place(x=1095,y=620)
 
 country=Label(df,font=("Arial Black",15),text="Country",fg="black")
-country.place(x=140,y=490)
+country.place(x=130,y=490)
 
 show_country=Label(df,font=("Arial",15),fg="red")
 show_country.place(x=150,y=530)
@@ -142,26 +142,26 @@ temp_h.place(x=1340,y=490)
 show_humidity=Label(df,font=("Arial",15),text=" ",fg="red")
 show_humidity.place(x=1390,y=530)
 
-blank_body=Label(df,bg="deepskyblue",width=600,height=5)
+blank_body=Label(df,bg="darkorchid",width=600,height=5)
 blank_body.pack()
 
-blank_body_text=Label(df,font=("Arial Black",23),text="WEATHER FORECASTING APP",width=60,justify="center",bg="deepskyblue")
+blank_body_text=Label(df,font=("Arial Black",23),text="WEATHER FORECASTING APP",width=60,justify="center",bg="darkorchid",fg="orange")
 blank_body_text.place(x=135,y=16)
 
-dt=Label(df,font=("Din",12),text="Last Updated : ",fg="black",bg="deepskyblue")
-dt.place(x=1260,y=10)
+dt=Label(df,font=("Din",12),text="Last Updated : ",fg="white",bg="darkorchid")
+dt.place(x=1260,y=8)
 
-show_dt=Label(df,font=("Din",12),text=" ",fg="red",bg="deepskyblue")
-show_dt.place(x=1380,y=10)
+show_dt=Label(df,font=("Din",12),text=" ",fg="black",bg="darkorchid")
+show_dt.place(x=1380,y=8)
 
 
-show_climate_text=Label(df,font=("Arial",12,"bold"),bg="deepskyblue")
+show_climate_text=Label(df,font=("Arial",12,"bold"),bg="darkorchid")
 show_climate_text.place(x=120,y=25)
 
-climate_info=Label(df,font=("calibari",8,),text="👆Show Climate Changes Here👆",bg="deepskyblue",fg="black")
+climate_info=Label(df,font=("calibari",8,),text="👆Show Climate Changes Here👆",bg="darkorchid",fg="white")
 climate_info.place(x=30,y=62)
 
-show_climate=Label(df,bg="deepskyblue")
+show_climate=Label(df,bg="darkorchid")
 show_climate.place(x=40,y=0)
 
 df.mainloop()

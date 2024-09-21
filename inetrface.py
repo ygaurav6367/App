@@ -97,68 +97,68 @@ Btn.place(x=720,y=415)
 temp_r=Label(df,font=("Arial Black",15),text="Region",fg="black")
 temp_r.place(x=360,y=490)
 
-show_r=Label(df,font=("Arial",15),fg="teal",)
+show_r=Label(df,font=("Arial",15),fg="darkorchid",)
 show_r.place(x=360,y=530)
 
 temp_f=Label(df,font=("Arial Black",15),text="Tempreture in Fahrenheit (°F)",fg="black")
 temp_f.place(x=600,y=490)
 
-show_f=Label(df,font=("Arial",15),text=" ",fg="teal")
+show_f=Label(df,font=("Arial",15),text=" ",fg="darkorchid")
 show_f.place(x=740,y=530)
 
 temp_c=Label(df,font=("Arial Black",15),text="Tempreture in Celsius (°C)",fg="black")
 temp_c.place(x=970,y=490)
 
-show_c=Label(df,font=("Arial",15),text=" ",fg="teal")
+show_c=Label(df,font=("Arial",15),text=" ",fg="darkorchid")
 show_c.place(x=1090,y=530)
 
 ws=Label(df,font=("Arial Black",15),text="Wind Speed (Kph)",fg="black")
 ws.place(x=320,y=580)
 
-show_ws=Label(df,font=("Din",15),text=" ",fg="darkgreen")
+show_ws=Label(df,font=("Din",15),text=" ",fg="darkorange2")
 show_ws.place(x=400,y=620)
 
 w_a=Label(df,font=("Arial Black",15),text="Wind Angle (°)",fg="black")
 w_a.place(x=690,y=580)
 
-show_wa=Label(df,font=("Din",15),text=" ",fg="darkgreen")
+show_wa=Label(df,font=("Din",15),text=" ",fg="darkorange2")
 show_wa.place(x=740,y=620)
 
 w_d=Label(df,font=("Arial Black",15),text="Wind Direction",fg="black")
 w_d.place(x=1035,y=580)
 
-show_wd=Label(df,font=("Din",15),text=" ",fg="darkgreen")
+show_wd=Label(df,font=("Din",15),text=" ",fg="darkorange2")
 show_wd.place(x=1095,y=620)
 
 country=Label(df,font=("Arial Black",15),text="Country",fg="black")
 country.place(x=130,y=490)
 
-show_country=Label(df,font=("Arial",15),fg="red")
-show_country.place(x=150,y=530)
+show_country=Label(df,font=("Arial",15),fg="darkorchid")
+show_country.place(x=138,y=530)
 
 temp_h=Label(df,font=("Arial Black",15),text="Humidity (%)",fg="black")
 temp_h.place(x=1340,y=490)
 
-show_humidity=Label(df,font=("Arial",15),text=" ",fg="red")
+show_humidity=Label(df,font=("Arial",15),text=" ",fg="darkorchid")
 show_humidity.place(x=1390,y=530)
 
 blank_body=Label(df,bg="darkorchid",width=600,height=5)
 blank_body.pack()
 
-blank_body_text=Label(df,font=("Arial Black",23),text="WEATHER FORECASTING APP",width=60,justify="center",bg="darkorchid",fg="orange")
-blank_body_text.place(x=135,y=16)
+blank_body_text=Label(df,font=("Arial Black",25),text="WEATHER FORECASTING APP",width=60,justify="center",bg="darkorchid",fg="orange")
+blank_body_text.place(x=120,y=16)
 
-dt=Label(df,font=("Din",12),text="Last Updated : ",fg="white",bg="darkorchid")
-dt.place(x=1260,y=8)
+dt=Label(df,font=("Din",12,"bold"),text="Last Updated : ",fg="white",bg="darkorchid")
+dt.place(x=1267,y=8)
 
-show_dt=Label(df,font=("Din",12),text=" ",fg="black",bg="darkorchid")
-show_dt.place(x=1380,y=8)
+show_dt=Label(df,font=("Din",12,"bold"),text=" ",fg="orange",bg="darkorchid")
+show_dt.place(x=1383,y=8)
 
 
-show_climate_text=Label(df,font=("Arial",12,"bold"),bg="darkorchid")
+show_climate_text=Label(df,font=("Arial",12,"bold"),bg="darkorchid",fg="orange")
 show_climate_text.place(x=120,y=25)
 
-climate_info=Label(df,font=("calibari",8,),text="👆Show Climate Changes Here👆",bg="darkorchid",fg="white")
+climate_info=Label(df,font=("calibari",8,"bold"),text="👆Show Climate Changes Here👆",bg="darkorchid",fg="white")
 climate_info.place(x=30,y=62)
 
 show_climate=Label(df,bg="darkorchid")

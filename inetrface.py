@@ -63,6 +63,8 @@ def wheather_status(event=None):
     show_dt.config(text=str(data["current"]["last_updated"]))
     show_country.config(text=str(data["location"]["country"]))
     show_humidity.config(text=str(data["current"]["humidity"]))
+    show_feel_C.config(text=str(data["current"]["feelslike_c"]))
+    show_feel_f.config(text=str(data["current"]["feelslike_f"]))
 
 
     condition_text = data["current"]["condition"]["text"]
@@ -97,7 +99,7 @@ Btn.place(x=720,y=415)
 temp_r=Label(df,font=("Arial Black",15),text="Region",fg="black")
 temp_r.place(x=360,y=490)
 
-show_r=Label(df,font=("Arial",15),fg="darkorchid",)
+show_r=Label(df,font=("Arial",15),fg="darkorchid")
 show_r.place(x=360,y=530)
 
 temp_f=Label(df,font=("Arial Black",15),text="Tempreture in Fahrenheit (°F)",fg="black")
@@ -154,12 +156,23 @@ dt.place(x=1267,y=8)
 show_dt=Label(df,font=("Din",12,"bold"),text=" ",fg="orange",bg="darkorchid")
 show_dt.place(x=1383,y=8)
 
+temp_feel_c=Label(df,font=("Din",12,"bold"),text="Feels Like (°C) : ",fg="white",bg="darkorchid")
+temp_feel_c.place(x=1267,y=30)
+
+show_feel_C=Label(df,font=("Din",12,"bold"),text=" ",fg="orange",bg="darkorchid")
+show_feel_C.place(x=1390,y=31)
+
+temp_feel_f=Label(df,font=("Din",12,"bold"),text="Feels Like (°F) : ",fg="white",bg="darkorchid")
+temp_feel_f.place(x=1267,y=55)
+
+show_feel_f=Label(df,font=("Din",12,"bold"),text=" ",fg="orange",bg="darkorchid")
+show_feel_f.place(x=1390,y=56)
 
 show_climate_text=Label(df,font=("Arial",12,"bold"),bg="darkorchid",fg="orange")
 show_climate_text.place(x=120,y=25)
 
-climate_info=Label(df,font=("calibari",8,"bold"),text="👆Show Climate Changes Here👆",bg="darkorchid",fg="white")
-climate_info.place(x=30,y=62)
+climate_info=Label(df,font=("calibari",7,"bold"),text="👆Show Climate Changes Here👆",bg="darkorchid",fg="white")
+climate_info.place(x=35,y=63)
 
 show_climate=Label(df,bg="darkorchid")
 show_climate.place(x=40,y=0)
